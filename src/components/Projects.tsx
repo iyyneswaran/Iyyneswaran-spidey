@@ -87,15 +87,18 @@ export function Projects() {
                   
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-500 flex items-center justify-center">
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      whileHover={{ opacity: 1, y: 0 }}
-                      className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    >
-                      <span className="text-white text-sm font-medium tracking-wider flex items-center gap-2">
-                        View Details <ArrowUpRight className="w-4 h-4" />
-                      </span>
-                    </motion.div>
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      >
+                        <span className="text-white text-sm font-medium tracking-wider flex items-center gap-2">
+                          View Project <ArrowUpRight className="w-4 h-4" />
+                        </span>
+                      </a>
+                    )}
                   </div>
                 </div>
 
@@ -105,7 +108,19 @@ export function Projects() {
                     <h3 className="text-xl md:text-2xl font-semibold tracking-tight">
                       {project.title}
                     </h3>
-                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300 shrink-0 mt-1" />
+                    {project.url ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 mt-1 p-1 -m-1 rounded-full hover:bg-muted transition-colors"
+                        aria-label={`Visit ${project.title}`}
+                      >
+                        <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300" />
+                      </a>
+                    ) : (
+                      <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300 shrink-0 mt-1" />
+                    )}
                   </div>
 
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">

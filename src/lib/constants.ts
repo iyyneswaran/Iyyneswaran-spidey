@@ -90,6 +90,7 @@ export interface Project {
   outcome: string;
   categories: ProjectCategory[];
   color: string;
+  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -109,6 +110,7 @@ export const PROJECTS: Project[] = [
     outcome: "🏆 1st Prize — ₹50,000",
     categories: ["Featured", "Full Stack", "Hackathon"],
     color: "#1a1a1a",
+    url: "https://agri-assist-frontend-seven.vercel.app/",
   },
   {
     id: "eduguru",
@@ -126,6 +128,7 @@ export const PROJECTS: Project[] = [
     outcome: "Production-ready LMS",
     categories: ["Featured", "Full Stack", "AI/ML"],
     color: "#2a2a2a",
+    url: "https://edu-guru-frontend.vercel.app/",
   },
   {
     id: "Atopsy",
@@ -141,6 +144,7 @@ export const PROJECTS: Project[] = [
     outcome: "Accurate, intelligent, evidence-driven forensic autopsy decision support.",
     categories: ["Featured", "AI/ML", "Hackathon"],
     color: "#333333",
+    url: "https://atopsy-frontend.vercel.app/",
   },
   {
     id: "fullstack-apps",
@@ -156,6 +160,7 @@ export const PROJECTS: Project[] = [
     outcome: "Production-grade architecture",
     categories: ["Full Stack"],
     color: "#3d3d3d",
+    url: "https://github.com/iyyneswaran?tab=repositories",
   },
 ];
 
