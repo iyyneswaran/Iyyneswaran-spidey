@@ -285,7 +285,6 @@ export const LANGUAGES = [
 
 export const CONTACT_INFO = {
   email: "iyyneswaranp@gmail.com",
-  phone: "+91 9042524161",
   linkedin: "linkedin.com/in/iyyneswaran07",
   linkedinUrl: "https://linkedin.com/in/iyyneswaran07",
   github: "github.com/iyyneswaran",
