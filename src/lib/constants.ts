@@ -184,21 +184,21 @@ export const EXPERIENCES: ExperienceItem[] = [
     organization: "IEEE",
     description:
       "Webmaster for 1 year, maintaining and managing the official IEEE college website.",
-    period: "2024 — 2025",
+    period: "2026 - present",
   },
   {
     title: "IEEE MAGIC Communicator & RAS MAGIC Mastermind",
     organization: "IEEE",
     description:
       "Active member contributing to communication and robotics & automation society initiatives.",
-    period: "2024 — Present",
+    period: "2024 - Present",
   },
   {
     title: "IEEE Day & Hackathon Organizer",
     organization: "IEEE",
     description:
       "Organized IEEE Day and co-organized a 14-hour hackathon event.",
-    period: "2024",
+    period: "2025",
   },
   {
     title: "Tech Team Member — TEDx",
@@ -212,7 +212,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     organization: "BigSiBucks Innovation Pvt Ltd",
     description:
       "15 days AI/DS internship focusing on artificial intelligence and data science applications.",
-    period: "2024",
+    period: "2026",
   },
 ];
 
