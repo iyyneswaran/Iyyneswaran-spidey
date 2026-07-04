@@ -57,14 +57,14 @@ export function Contact() {
                   <span className="text-sm">{CONTACT_INFO.email}</span>
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a
+                {/* <a
                   href={`tel:${CONTACT_INFO.phone}`}
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="text-sm">{CONTACT_INFO.phone}</span>
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </a> */}
                 <a
                   href={CONTACT_INFO.linkedinUrl}
                   target="_blank"

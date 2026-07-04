@@ -26,10 +26,10 @@ export function Hero() {
             initial="hidden"
             animate="visible"
             className="order-2 lg:order-1"
-          >
+          > 
             {/* Label */}
             <motion.div variants={fadeUpVariants} className="mb-6">
-              <span className="text-label text-muted-foreground">Portfolio 2025</span>
+              <span className="text-label text-muted-foreground">Portfolio 2026</span>
             </motion.div>
 
             {/* Headlines */}
