@@ -290,6 +290,6 @@ export const CONTACT_INFO = {
   linkedinUrl: "https://linkedin.com/in/iyyneswaran07",
   github: "github.com/iyyneswaran",
   githubUrl: "https://github.com/iyyneswaran",
-  portfolio: "iyyneswaranp.vercel.app",
-  portfolioUrl: "https://iyyneswaranp.vercel.app",
+  // portfolio: "iyyneswaranp.vercel.app",
+  // portfolioUrl: "https://iyyneswaranp.vercel.app",
 } as const;
