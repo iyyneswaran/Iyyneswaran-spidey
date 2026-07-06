@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { LoaderWrapper } from "@/components/ui/LoaderWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,8 +67,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-background text-foreground">
-        <CustomCursor />
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <LoaderWrapper>
+          <CustomCursor />
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        </LoaderWrapper>
       </body>
     </html>
   );
